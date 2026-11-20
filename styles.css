@@ -667,3 +667,27 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Clearly clickable external location link */
+a.location-link {
+  color: #a16207;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+a.location-link:hover,
+a.location-link:focus-visible {
+  color: var(--text-main);
+  background: var(--primary-light);
+  text-decoration-color: var(--primary-hover);
+  border-radius: 4px;
+}
+a.location-link .ext-icon {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 0.85em;
+  text-decoration: none;
+}
